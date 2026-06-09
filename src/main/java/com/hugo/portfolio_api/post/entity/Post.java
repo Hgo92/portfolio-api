@@ -28,6 +28,11 @@ public class Post {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String content;
 
+    @Column(nullable = false)
+    private String slug;
+
+    private boolean published;
+
     @CreationTimestamp
     private LocalDateTime createdAt;
 
