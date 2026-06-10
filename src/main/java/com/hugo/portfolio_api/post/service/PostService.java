@@ -14,6 +14,8 @@ public interface PostService {
 
     PostResponse findById(Long id);
 
+    PostResponse findBySlug(String slug);
+
     PostResponse create(
             CreatePostRequest request
     );

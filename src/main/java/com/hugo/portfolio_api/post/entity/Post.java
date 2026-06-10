@@ -31,6 +31,7 @@ public class Post {
     @Column(nullable = false)
     private String slug;
 
+    @Column(nullable = false)
     private boolean published;
 
     @CreationTimestamp

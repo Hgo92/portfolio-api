@@ -12,7 +12,10 @@ public record UpdatePostRequest(
         @NotBlank
         String content,
 
-        Boolean published
+        Boolean published,
+
+        @NotBlank
+        String slug
 
 ) {
 }
