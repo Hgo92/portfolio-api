@@ -6,7 +6,7 @@ public record TechnologyResponse(
 
         String name,
 
-        String logoUrl
+        String logo
 
 ) {
 }

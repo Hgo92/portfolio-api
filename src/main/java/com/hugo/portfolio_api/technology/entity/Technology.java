@@ -18,6 +18,6 @@ public class Technology {
     @Column(nullable = false, unique=true)
     private String name;
 
-    @Column(nullable = false)
-    private String logoFileName;
+    @Column
+    private String logo;
 }
