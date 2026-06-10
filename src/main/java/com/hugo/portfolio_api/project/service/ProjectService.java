@@ -19,6 +19,10 @@ public interface ProjectService {
             ProjectStatus status
     );
 
+    ProjectResponse create(
+            CreateProjectRequest request
+    );
+
     ProjectResponse update(
             Long id,
             UpdateProjectRequest request
