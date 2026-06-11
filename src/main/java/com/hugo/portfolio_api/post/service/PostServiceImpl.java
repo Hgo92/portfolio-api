@@ -110,7 +110,7 @@ public class PostServiceImpl
                 .findById(id)
                 .orElseThrow(() ->
                         new ResourceNotFoundException(
-                                "Post not found with id: " + id
+                                "Le post n'a pas été trouvé"
                         )
                 );
 
@@ -135,7 +135,7 @@ public class PostServiceImpl
                 .findById(id)
                 .orElseThrow(() ->
                         new ResourceNotFoundException(
-                                "Post not found with id: " + id
+                                "Le post n'a pas été trouvé"
                         )
                 );
 
@@ -151,7 +151,7 @@ public class PostServiceImpl
                 .findById(id)
                 .orElseThrow(() ->
                         new ResourceNotFoundException(
-                                "Post not found with id: " + id
+                                "Le post n'a pas été trouvé"
                         )
                 );
 
@@ -172,7 +172,7 @@ public class PostServiceImpl
                 .findById(id)
                 .orElseThrow(() ->
                         new ResourceNotFoundException(
-                                "Post not found with id: " + id
+                                "Le post n'a pas été trouvé"
                         )
                 );
 
