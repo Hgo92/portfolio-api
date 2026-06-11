@@ -1,5 +1,6 @@
 package com.hugo.portfolio_api.technology.service;
 
+import com.hugo.portfolio_api.exception.BusinessException;
 import com.hugo.portfolio_api.exception.ResourceNotFoundException;
 import com.hugo.portfolio_api.technology.dto.request.CreateTechnologyRequest;
 import com.hugo.portfolio_api.technology.dto.request.UpdateTechnologyRequest;
@@ -52,7 +53,7 @@ public class TechnologyServiceImpl
         if (technologyRepository.existsByName(
                 request.name()
         )) {
-            throw new RuntimeException(
+            throw new BusinessException(
                     "Cette technologie existe déjà"
             );
         }
